@@ -37,6 +37,7 @@ https://arxiv.org/pdf/1911.07849.pdf
 ## Equivarification
 https://arxiv.org/pdf/1906.07172.pdf
 
+# The rest of these papers are added by me, not Jim #
 # Electron imaging with NN: compressed sensing methods referenced here in citations and used #
 https://www.nature.com/articles/s41586-019-1319-8
 # symmetry group factorization for network structure (anatomy of worm neural cortex) #
