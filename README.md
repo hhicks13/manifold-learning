@@ -21,7 +21,9 @@ https://openreview.net/forum?id=H1gBhkBFDH
 > They did not elaborate on performance or practical reasons. Overall I learned
 > a lot by reading it, but it was more on the theoretical/abstract side than offering practical advice.
 > tl;dr "you can make a convolution kernel 'lie group equivariant', which means that the manifold being constructed
-> when data passes into that convolution layer is faithful to the structure of the desired lie group. This guarantee is acheived via the technical application of basis-splines, which is beyond my scope. They argue that using a fourier basis
+> when data passes into that convolution layer contains a new image of the data which will appear unchanged if a transformation T is applied to the filtered image where T belongs to G, the matrix lie group determining the manifold.
+> This guarantee is acheived via the technical application of basis-splines, which is beyond my scope. 
+> They argue that using a fourier basis
 > to decompose incoming data is insufficient to construct a manifold with the correct lie-group invariance properties. 
 > so you must use a basis-spline. I am not going to write this off entirely, but I have found cleaner expositions on
 > lie-group manifold learning, that were more helpful to my understanding. It's really just a matter of selecting a 
