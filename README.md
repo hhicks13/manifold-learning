@@ -16,7 +16,7 @@ https://openreview.net/forum?id=H1gBhkBFDH
 > to the next layer. In manifold learning, the concept of a neighborhood is determined by the structure of the
 > lie group which generates the manifold and proximity is quantified up to the action of this group. Take
 >  the rotation group G for example acting on some image X being fed to the CNN :two subregions of X will be convolved with another with high correlation coefficients if they belong to the same orbit under rotation of X, but
-> may be hardly convolved at even as neighboring pixels! Thats because in this example the action of G on X is NOT translational proximity, so in the resulting manifold, two apparently neighboring pixels not be considered distant from one another. This totally depends on the structure of the lie group and the manifold it generates.
+> may be hardly convolved at even as neighboring pixels! Thats because in this example the action of G on X is NOT translational proximity, so in the resulting manifold, two apparently neighboring pixels may be considered highly distant from one another and virtually uncorrelated from the G-manifold perspective. These computations totally depends on the structure of the lie group and the manifold it generates, and rotation is simply one example.
 > Comments:
 > They did not elaborate on performance or practical reasons. Overall I learned
 > a lot by reading it, but it was more on the theoretical/abstract side than offering practical advice.
