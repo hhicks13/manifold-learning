@@ -8,7 +8,17 @@ https://arxiv.org/pdf/2002.03061.pdf
 https://openreview.net/forum?id=H1gBhkBFDH
 > this paper uses alot of technical abstraction to justify their machinery, but it was unclear what benefit
 > they acheived other than proving that it is possible to construct CNNs that embed incoming data to a manifold
-> specified by the design of the NN. They did not elaborate on performance or practical reasons. Overall I learned
+> such that the computed representation of the data is invariant under the action of any desired lie group.
+> For example if you specify the lie group of rotation matrices, then your new embedded representation will
+> be the convolution of that image with all its rotated images (these correspond to neighbors in the lie-manifold)
+> In a normal CNN the image is convolved with its neighbors, weighted by proximity up to linear transpose, so
+> the further away a pixel, the *less* weight it will have in determining the new value of the pixel when it is mapped
+> to the next layer. In manifold learning, the concept of a neighborhood is determined by the structure of the
+> lie group which generates the manifold and proximity is quantified up to the action of this group. Take
+>  the rotation group for example acting on some image X being fed to the CNN :two subregions of X will be convolved with another if they belong to the same orbit under rotation of X, but
+> may not be convolved at all if they are neighboring pixels as translational proximity is not the group action being considered. This totally depends on the structure of the lie group and the manifold it generates.
+> Comments:
+> They did not elaborate on performance or practical reasons. Overall I learned
 > a lot by reading it, but it was more on the theoretical/abstract side than offering practical advice.
 > tl;dr "you can make a convolution kernel 'lie group equivariant', which means that the manifold being constructed
 > when data passes into that convolution layer is faithful to the structure of the desired lie group. This guarantee is acheived via the technical application of basis-splines, which is beyond my scope. They argue that using a fourier basis
