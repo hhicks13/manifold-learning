@@ -1,0 +1,3 @@
+[submodule "gspline"]
+	path = gspline
+	url = https://github.com/ebekkers/gsplinets
