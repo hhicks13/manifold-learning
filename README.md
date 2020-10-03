@@ -4,7 +4,7 @@ Lie Groups + AI + Image Processing
 ## incorporating symmetry into "deep dynamics models"
 https://arxiv.org/pdf/2002.03061.pdf
 
-## Basic Spline on lie groups
+## Basis-Spline on lie groups
 https://openreview.net/forum?id=H1gBhkBFDH
 > this paper uses alot of technical abstraction to justify their machinery, but it was unclear what benefit
 > they acheived other than proving that it is possible to construct CNNs that embed incoming data to a manifold
